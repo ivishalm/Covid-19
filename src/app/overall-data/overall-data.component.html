@@ -11,7 +11,7 @@
         <h3>Corona Virus Total Cases</h3>
       </div>
       <div class="box-detail">
-        <p>{{ covidStat[0].cases.total | number }}</p>
+        <p>{{ covidStat[0]?.cases.total | number }}</p>
       </div>
     </div>
     <div class="box">
@@ -19,7 +19,7 @@
         <h3>Death</h3>
       </div>
       <div class="box-detail">
-        <p class="death">{{ covidStat[0].deaths.total | number }}</p>
+        <p class="death">{{ covidStat[0]?.deaths.total | number }}</p>
       </div>
     </div>
     <div class="box">
@@ -27,7 +27,7 @@
         <h3>Recovered</h3>
       </div>
       <div class="box-detail">
-        <p class="recovered">{{ covidStat[0].cases.recovered | number }}</p>
+        <p class="recovered">{{ covidStat[0]?.cases.recovered | number }}</p>
       </div>
     </div>
   <div class="box">
@@ -35,10 +35,10 @@
       <h3>Active Cases</h3>
     </div>
     <div class="box-detail">
-      <p class="active">{{ covidStat[0].cases.active | number }}</p>
+      <p class="active">{{ covidStat[0]?.cases.active | number }}</p>
       <div class="extra-details">
-        <h4>Mild Condition : <span class="closed">{{ covidStat[0].cases.active - covidStat[0].cases.critical| number }}</span></h4>
-        <h4>Serious / Critical : <span class="death">{{ covidStat[0].cases.critical | number }}</span></h4>
+        <h4>Mild Condition : <span class="closed">{{ covidStat[0]?.cases.active - covidStat[0]?.cases.critical| number }}</span></h4>
+        <h4>Serious / Critical : <span class="death">{{ covidStat[0]?.cases.critical | number }}</span></h4>
       </div>
     </div>
   </div>
@@ -48,11 +48,11 @@
     </div>
     <div class="box-detail">
       <p class="closed">
-        {{ covidStat[0].cases.recovered + covidStat[0].deaths.total | number }}
+        {{ covidStat[0]?.cases.recovered + covidStat[0]?.deaths.total | number }}
       </p>
       <div class="extra-details">
-          <h4>Recovered / Discharged : <span class="recovered">{{ covidStat[0].cases.recovered | number }}</span></h4>
-          <h4>Deaths : <span class="death">{{ covidStat[0].deaths.total | number }}</span></h4>
+          <h4>Recovered / Discharged : <span class="recovered">{{ covidStat[0]?.cases.recovered | number }}</span></h4>
+          <h4>Deaths : <span class="death">{{ covidStat[0]?.deaths.total | number }}</span></h4>
         </div>
     </div>
   </div>

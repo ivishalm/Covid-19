@@ -1,0 +1,26 @@
+@import './../../styles.scss';
+.footer{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:80px;
+    background-color:#222;
+    @include bp(mobile){
+        flex-direction:column;
+        align-items:center;
+    }
+}
+.footer-description{
+    font-size:16px;
+    color:#bcbcbc;
+    margin:0px;
+    margin-right:5px;
+    span{
+        font-size:20px;
+        color:red;
+    }
+    a{
+        font-size:16px;
+        color:#bcbcbc;
+    }
+}

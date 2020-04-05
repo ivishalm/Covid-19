@@ -6,16 +6,16 @@
 <div class="container">
   <div class="row cases-container">
     <div class="case-box confirmed">
-      <h3>Confirmed: {{ worldData[0].total_cases | number }}</h3>
+      <h3>Confirmed: {{ worldData[0]?.total_cases | number }}</h3>
     </div>
     <div class="case-box recovered">
-      <h3>Recovered: {{ worldData[0].total_recovered | number }}</h3>
+      <h3>Recovered: {{ worldData[0]?.total_recovered | number }}</h3>
     </div>
     <div class="case-box death">
-      <h3>Dead: {{ worldData[0].total_deaths | number }}</h3>
+      <h3>Dead: {{ worldData[0]?.total_deaths | number }}</h3>
     </div>
     <div class="case-box active">
-      <h3>Active: {{ worldData[0].active_cases | number }}</h3>
+      <h3>Active: {{ worldData[0]?.active_cases | number }}</h3>
     </div>
   </div>
 

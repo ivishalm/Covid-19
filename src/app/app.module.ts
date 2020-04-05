@@ -12,13 +12,15 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { SpinnerComponent } from './spinner/spinner.component';
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     OverallDataComponent,
     CountryDataComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

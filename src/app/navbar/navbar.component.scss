@@ -11,6 +11,7 @@ nav{
     background-color:#222222;
     z-index:1;
    @include bp(mobile){
+       position:static;
        padding-top:10px;
        flex-direction:column;
        height:100px;
